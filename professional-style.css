@@ -103,6 +103,10 @@ h3 {
     margin: 0 5px;
 }
 
+#projects .responsive.card {
+    max-width: 30em;
+}
+
 .card {
     background-color: #b9b9dd7a;
     display: block;
