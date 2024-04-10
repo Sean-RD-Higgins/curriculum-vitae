@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Curriculum Vitae of Sean Higgins</title>
 
-    <link rel="stylesheet" type="text/css" href="professional-style.css" />
-    <!--[if gte IE 9]>
-        <style type="text/css">
-            .subject {
-                filter: none;
-            }
-        </style>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="professional-style.css?v=20240404" />
 </head>
 
 <body>
@@ -22,6 +15,7 @@
         <div class="contact">
             <div>LinkedIn: <a id="linkedin" href="https://www.linkedin.com/in/higginsdash/">https://www.linkedin.com/in/higginsdash/</a></div>
             <div>Github: <a id="github" href="https://github.com/Sean-RD-Higgins">https://github.com/Sean-RD-Higgins</a></div>
+            <div>Project: <a id="github" href="https://higgins.host/expenses/">https://higgins.host/expenses/</a></div>
             <div>Phone: <a id="phone" href="tel:475-529-0626">(475) 529-0626</a></div>
         </div>
 
@@ -34,11 +28,11 @@
             </p>
         </div><!-- .subcontent -->
 
-        <h2>Relevant Experience</h2>
+        <h2 class="print-hide">Relevant Experience</h2>
         <div class="subcontent">
-            <p>
+            <p class="print-hide">
                 Developed programming style while creating software applications.  Coded, debugged, tested, and documented numerous programs.  A list of projects are listed below
-                (<a href="#projects">Click here to auto-scroll to projects</a>).
+                <span class="print-hide">(<a href="#projects">Click here to auto-scroll to projects</a>)</span>.
                 The languages and platforms used to created these programs are the following:
             </p>
             <div class="responsive">
@@ -88,6 +82,8 @@
             </div><!-- .responsive -->
         </div><!-- .subcontent -->
 
+        <div class="pagebreak"> </div>
+
         <h2>Professional Experience</h2>
         <div class="subcontent">
             <div class="job">
@@ -122,9 +118,12 @@
                 </ul>
             </div><!-- .job -->
         </div><!-- .subcontent -->
+
+        <div class="pagebreak"> </div>
+
         <div class="subcontent">
             <div class="job">
-                <h3 class="company-name">SkyGeek.com</h3>
+                <h3 class="company-name">Styles Logistics</h3>
                 <div><em class="job-address">30 Airway Dr, Lagrangeville, NY - (845) 677-8185</em></div>
                 <div><em class="duration">May 2013 - April 2019</em></div>
                 <div><em class="position">Lead Software Engineer</em></div>
@@ -169,6 +168,43 @@
             </div><!-- .job -->
         </div><!-- .subcontent -->
 
+        <div class="pagebreak"> </div>
+
+        <h2> Relevant Projects </h2>
+        <div id="projects">
+            <div class="subcontent">
+                <div class="responsive card">
+                    <a target="_blank" href="https://higgins.host/expenses/"><span>DashExpenses WebApp</span></a>
+                    <p>
+                        <a target="_blank" href="https://higgins.host/expenses/">https://higgins.host/expenses/</a> -
+                        ASP.NET, C#, HTML, CSS, JavaScript project. I wrote the requirements document, the user flow diagram, created the github repository,
+                        created the branching strategy, gathered the team to work on the application, started the solution file, created the initial release,
+                        purchased the server space, configured the ASP.NET settings on server, deployed the application.
+                        Intentionally wrote most parts with bad practice and put notes on what best practice to use to give work to teammates.
+                    </p>
+                </div><!-- .responsive -->
+                <div class="responsive card">
+                    <a target="_blank" href="https://github.com/Sean-RD-Higgins/TextAdventureRpg"><span>C# WebApp Mentor Project</span></a>
+                    <p>
+                        A project solely dedicated to mentor other developers on Design Patterns. I collaborated with another developer to teach them design patterns, but in a subject that was of interest to the learning party.  I designed the architecture and added the content.  I had them create some of the class functionality under my mentorship.  I wrote the remainder of project as well.
+                    </p>
+                </div><!-- .responsive -->
+                <div class="responsive card">
+                    <a target="_blank" href="https://github.com/Sean-RD-Higgins/curriculum-vitae"><span>This Résumé</span></a>
+                    <p>
+                        <a target="_blank" href="https://github.com/Sean-RD-Higgins/curriculum-vitae">https://github.com/Sean-RD-Higgins/curriculum-vitae</a> -
+                        This is a demonstration of a static HTML page that is responsive.  It is cross-browser and cross-device compatible.
+                    </p>
+                </div><!-- .responsive -->
+                <div class="responsive card">
+                    <a target="_blank" href="https://github.com/Seansuke/ZeldaJavascript/tree/develop"><span>Javascript From Scratch Project</span></a>
+                    <p>This is a demonstration of an HTML, CSS, JavaScript, and AJAX project I created from scratch.</p>
+                </div><!-- .responsive -->
+            </div><!-- .subcontent -->
+        </div><!-- #projects -->
+
+        <div class="pagebreak"> </div>
+
         <div id="awards">
             <h2> Honors and Awards </h2>
             <div class="subcontent">
@@ -194,7 +230,7 @@
                     </p>
                 </div><!-- .responsive -->
                 <div class="card responsive">
-                    <h3>"Do What We Say" 2019 Award - ARCOS LLC</h3>
+                    <h3>"We Do What We Say" 2019 Award - ARCOS LLC</h3>
                     <em>
                         Dec 2019
                     </em>
@@ -207,34 +243,53 @@
             </div><!-- .subcontent -->
         </div><!-- #projects -->
 
-        <div id="projects">
-            <h2> Relevant Projects </h2>
-            <div class="subcontent">
-                <div class="responsive card">
-                    <a target="_blank" href="https://higgins.host/expenses/"><span>DashExpenses WebApp</span></a>
-                    <p>
-                        ASP.NET, C#, HTML, CSS, JavaScript project. I wrote the requirements document, the user flow diagram, created the github repository,
-                        created the branching strategy, gathered the team to work on the application, started the solution file, created the initial release,
-                        purchased the server space, configured the ASP.NET settings on server, deployed the application.
-                        Intentionally wrote most parts with bad practice and put notes on what best practice to use to give work to teammates.
-                    </p>
-                </div><!-- .responsive -->
-                <div class="responsive card">
-                    <a target="_blank" href="https://github.com/Sean-RD-Higgins/TextAdventureRpg"><span>C# WebApp Mentor Project</span></a>
-                    <p>
-                        A project solely dedicated to mentor other developers on Design Patterns. I collaborated with another developer to teach them design patterns, but in a subject that was of interest to the learning party.  I designed the architecture and added the content.  I had them create some of the class functionality under my mentorship.  I wrote the remainder of project as well.
-                    </p>
-                </div><!-- .responsive -->
-                <div class="responsive card">
-                    <a target="_blank" href="https://github.com/Sean-RD-Higgins/curriculum-vitae"><span>This Résumé</span></a>
-                    <p>This is a demonstration of a static HTML page that is responsive.  It is cross-browser and cross-device compatible.</p>
-                </div><!-- .responsive -->
-                <div class="responsive card">
-                    <a target="_blank" href="https://github.com/Seansuke/ZeldaJavascript/tree/develop"><span>Javascript From Scratch Project</span></a>
-                    <p>This is a demonstration of an HTML, CSS, JavaScript, and AJAX project I created from scratch.</p>
-                </div><!-- .responsive -->
-            </div><!-- .subcontent -->
-        </div><!-- #projects -->
+        <div id="reviews">
+            <h2>LinkedIn Reviews</h2>
+            <p class="print-hide">
+                Reviews can be found at:
+                <a target="_blank" href="https://www.linkedin.com/in/higginsdash/details/recommendations/?detailScreenTabIndex=0">https://www.linkedin.com/in/higginsdash/details/recommendations/?detailScreenTabIndex=0</a>
+            </p>
+            <div class="responsive card">
+                <a target="_blank" href="https://www.linkedin.com/in/meg-boggus-28942bb9/">
+                    <h3>Meg Boggus</h3>
+                    <p>https://www.linkedin.com/in/meg-boggus-28942bb9/</p>
+                </a>
+                <em>TPMO Manager at The Trevor Project</em>
+                <p>
+                    Sean is a brilliant software developer who always finishes his work on time and then is usually found helping
+                    out another engineer so they get their work in on time.
+                    He's an absolute joy to collaborate with, receives feedback well, and will elevate the camaraderie on your team.
+                    When I worked at ARCOS, I had the pleasure of working with Sean.
+                    We worked on a team that implemented SCRUM together and Sean really helped me champion that process.
+                    Sean is an excellent developer and always had a very low percentage of bugs on his cases.
+                    Sean also takes the time to mentor other engineers. I couldn't recommend him enough!
+                </p>
+            </div>
+            <div class="responsive card print-hide">
+                <a target="_blank" href="https://www.linkedin.com/in/ruthquinn">
+                    <h3>Ruth Quinn</h3>
+                    <p>https://www.linkedin.com/in/ruthquinn</p>
+                </a>
+                <em>
+                    Senior Quality Engineer at ARCOS LLC
+                </em>
+                <p>
+                    Sean is amazing to collaborate with. Not only is his code reliable, but he also unit tests his
+                    work and also provides detailed testing notes. I have watched Sean shine as he mentors new
+                    developers and I have bee fortunate enough to read his onboarding plans which are comprehensive
+                    and detailed. He really cares about the success of his team. Sean is friendly to work with and
+                    a good teacher. When I have questions, I can rely on him (even if it is not something he is
+                    currently working on). But even better than just helping me, when he sees gaps he has provided
+                    a ton of documentation and diagrams for our repository. He volunteers for the toughest assignments
+                    and does not even wince when under pressure - even when priorities change or deadlines loom.
+                    He has an agile mindset and collaborates well with everyone. He is an asset to every team,
+                    providing mentorship and an upbeat attitude even when volunteering to take on hard challenges.
+                    Anyone who works with him is fortunate!
+                </p>
+            </div>
+        </div>
+
+        <div class="pagebreak"> </div>
 
         <h2> Professional References </h2>
         <div class="subcontent">
@@ -242,7 +297,7 @@
                 <h3>Jeremy Likes</h3>
                 <div>
                     <span>
-                        LinkedIn: 
+                        LinkedIn:
                         <a href="https://www.linkedin.com/in/jeremylikes">
                             linkedin.com/in/jeremylikesr
                         </a>
