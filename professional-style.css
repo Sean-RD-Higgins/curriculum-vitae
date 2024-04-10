@@ -21,7 +21,6 @@ h1 {
     text-align: center;
     padding: 5px;
     color: #eaeaea;
-
     /* Intense levels of backwards compatibility with older browsers. */
     background: #4c4c4c;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRjNGM0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzY2NjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzJiMmIyYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMzEzMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -93,68 +92,129 @@ h3 {
     margin: 0;
 }
 
-.subcontent p {
-    margin: 0;
-}
+    .subcontent p {
+        margin: 0;
+    }
 
 #projects .subcontent {
     text-align: center;
 }
 
-/* Assigning this class to siblings allows them to float alongside each other when enough width is designated.  When there is a lack of width, Later children will fallback to the next line. */
-.responsive {
+.card, .card-large {
     display: inline-block;
     vertical-align: top;
     margin: 0 5px;
-}
-
-#projects .responsive.card, #reviews .responsive.card {
-    max-width: 30em;
-}
-
-.card {
     background-color: #b9b9dd7a;
-    display: block;
-    margin: 0.5em 0em;
     padding: 5px;
 }
-.card h3 {
-    margin: 0;
+
+    .card h3, .card-large h3 {
+        margin: 0;
+    }
+
+a {
+    word-wrap: break-word;
 }
 
-@media (max-width: 800px) {
-    .responsive {
-        display: inline-block;
+.pagebreak {
+    display: none;
+    visibility: hidden;
+}
+
+    .pagebreak.persist {
+        display: block;
+        visibility: visible;
+    }
+
+@media (max-width: 600px) {
+    .subcontent {
+        margin: 0px;
+    }
+
+    .card, .card-large {
         max-width: 100%;
     }
 }
+
+@media (min-width: 601px) {
+    .subcontent {
+        margin: 0px;
+    }
+
+    .card {
+        max-width: 46%;
+    }
+
+    .card-large {
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 801px) {
     .subcontent {
         margin: 0 40px;
     }
 
-    .subcontent p {
-        margin: 0 40px;
+        .subcontent p {
+            margin: 0 40px;
+        }
+
+    .card {
+        margin: 1em 0.5em;
+        max-width: 29%;
     }
 
-    .card.responsive {
-        margin: 1em 0.5em;
-        max-width: 19em;
+    .card-large {
+        max-width: 46%;
+    }
+
+    #content > h2 {
+        margin: 0 40px;
+    }
+}
+
+@media (min-width: 1801px) {
+    .subcontent {
         display: inline-block;
+        max-width: 100%;
+        width: 49%;
+        margin: 1em 0;
+    }
+
+    #content > h2 {
+        margin: 0;
+    }
+
+    .card {
+        max-width: 20em;
+    }
+
+    .card-large {
+        max-width: 40em;
+    }
+
+    #content div {
+        vertical-align: top;
+    }
+
+    .contact {
+        display: inline-block
     }
 }
 
 @media print {
     .pagebreak {
         page-break-before: always;
+        display: block;
+        visibility: visible;
     }
 
     .print-hide {
         display: none;
-        visibility:hidden;
+        visibility: hidden;
     }
 
-    .card.responsive, #projects .responsive.card, #reviews .responsive.card  {
+    .card-large {
         max-width: 100%;
     }
 
